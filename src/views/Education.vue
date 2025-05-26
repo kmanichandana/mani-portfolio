@@ -159,7 +159,8 @@ const education = [
 /* ✅ Responsive Styles */
 @media (max-width: 768px) {
   .education-section {
-    padding: 20px;
+    padding: 10px;
+    width: calc(100vw - 80px);
   }
 
   .education-card {
@@ -170,7 +171,7 @@ const education = [
 
   .logo-wrapper {
     width: 100%; /* ✅ Ensure full width */
-    padding: 16px;
+    padding: 10px;
     background: transparent;
   }
 

@@ -24,15 +24,15 @@
         <h1>Hi! I am <span class="name">Mani</span></h1>
         <h2 class="typing-text">
           I am a
-          <span ref="typedText" class="typed-role"></span>
+          "<span ref="typedText" class="typed-role"></span>"
         </h2>
       </div>
       
     </div>
 
     <p class="description">
-        " I develop full-stack web applications using modern frameworks, ensuring responsive UIs and robust backend architecture.
-        Proficient in building scalable systems, integrating APIs, and optimizing performance across the stack. "
+        "I develop full-stack web applications using modern frameworks, ensuring responsive UIs and robust backend architecture.
+        Proficient in building scalable systems, integrating APIs, and optimizing performance across the stack."
     </p>
   </section>
 </template>
@@ -109,6 +109,10 @@ h1{
   color: #666;
 }
 
+.typed-role{
+  color: #FF6B00;
+}
+
 .description {
   color: #555;
   font-size: 20px;
@@ -135,16 +139,35 @@ h1{
   .home-container {
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px;
+    padding: 0px;
+    width: calc(100vw - 60px);
   }
 
-  .left,
+  .left {
+    flex-direction: column;
+    width: 100%;
+  }
+
   .right {
-    max-width: 100%;
+    margin: 0px
+  }
+  .right img{
+    width: 60vw;
+  }
+  .social-icons {
+    display: none;
   }
 
-  .social-icons {
-    justify-content: center;
+  .name {
+    font-size: 50px;
   }
+  h1{
+    font-size: 40px;
+  }
+
+  .typing-text {
+    font-size: 1.5rem;
+  }
+  
 }
 </style>

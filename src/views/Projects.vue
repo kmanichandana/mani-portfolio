@@ -80,8 +80,8 @@ const projects = [
       'Personal portfolio built with Vue and Vite featuring project showcase, skills, and responsive design.',
     tech: ['Vue', 'Vite', 'CSS'],
     img: 'portfolio.jpg',
-    github: 'https://github.com/yourusername/portfolio',
-    live: 'https://yourname.dev'
+    github: 'https://github.com/kmanichandana/mani-portfolio',
+    live: 'https://mani-chandana-kandukuri.netlify.app/'
   },
   {
     title: 'Task Manager',
@@ -257,7 +257,9 @@ const projects = [
 
 @media (max-width: 768px) {
   .projects-section {
-    padding: 60px 20px;
+    padding: 10px;
+    width: calc(100vw - 80px);
+
   }
 
   .icon-links a {

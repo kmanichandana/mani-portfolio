@@ -176,4 +176,55 @@ const experiences = [
   list-style: disc;
   text-align: left;
 }
+@media (max-width: 768px) {
+
+  .experience-section {
+    width: calc(100vw - 80px);
+  }
+
+  .experience-card {
+    flex-direction: column;
+    align-items: stretch;
+    
+  }
+
+  .logo-wrapper {
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .duration {
+    font-size: 0.85rem;
+  }
+
+  .company {
+    font-size: 0.95rem;
+  }
+
+  .location {
+    font-size: 0.85rem;
+  }
+
+  .details {
+    font-size: 0.9rem;
+    padding: 10px 0 0;
+  }
+}
+
 </style>

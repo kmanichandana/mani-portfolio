@@ -177,7 +177,14 @@ const skills = [
     padding: 60px 20px;
   }
   .skill-card {
-    width: 100px;
+    width: 80px;
+    height: 80px;
   }
+  .skill-icon{
+    height: 30px;
+    width: 30px;
+  }
+    
+  
 }
 </style>
