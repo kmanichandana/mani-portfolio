@@ -17,7 +17,7 @@
         </a>
       </div>
       <div class="right">
-        <img src="/profile.jpg" alt="Mani Chandana" />
+        <img src="/Profile.png" alt="Mani Chandana" />
       </div>
 
       <div class="intro">
@@ -76,26 +76,33 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   text-align: left;
+  color: black;
 }
 .left {
   display:flex;
   width: 100%;
+  padding-inline: 10px;
+  background-color: white;
 }
 
 .right {  
-  text-align: center;
-  margin-right: 20px;
+  margin: 20px;
+  max-height: 40vh;
+  box-shadow: black 0 0 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid black 1px;
 }
 
 .right img {
   max-height: 40vh;
   width: auto;
-  border-radius: 10px;
-  
+  border-radius: 50%;
+
 }
 
 .name {
-  color: #FF6B00; /* orange */
+  color: #fa7f74;
   font-size: 70px;
 }
 
@@ -106,15 +113,15 @@ h1{
 .typing-text {
   font-size: 2rem;
   margin: 1rem 0;
-  color: #666;
+  color: black;
 }
 
 .typed-role{
-  color: #FF6B00;
+  color: #fa7f74;
 }
 
 .description {
-  color: #555;
+  color: #fff8f3;
   font-size: 20px;
   margin-bottom: 1.5rem;
 }
@@ -127,7 +134,7 @@ h1{
 }
 .social-icons a {
   font-size: 1.5rem;
-  color: #FF6B00;
+  color: #f77064;
   transition: color 0.3s;
 }
 
@@ -146,13 +153,23 @@ h1{
   .left {
     flex-direction: column;
     width: 100%;
+    padding-inline: 0px;
+    background-color: transparent;
   }
 
   .right {
-    margin: 0px
+    margin: 0px;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 0%;
   }
   .right img{
-    width: 60vw;
+    width: 70vw;
+    border-radius: 10px;
+    background-color: #ececea;
+
+
   }
   .social-icons {
     display: none;

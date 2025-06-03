@@ -2,7 +2,7 @@
   <div class="app-layout">
     <!-- Header -->
     <div class="header1">
-      <img src="/mck.png" alt="Mani Chandana" />
+      <!-- <img src="/mck.png" alt="Mani Chandana" /> -->
       <h1>Mani Chandana Kandukuri</h1>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/mani-chandana-kandukuri/" target="_blank">
@@ -150,16 +150,26 @@ const getBoxStyle = (name, index) => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sirin+Stencil&display=swap');
+
 
 .app-layout {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: white;
+  background-image: url('dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
+.app-layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* black overlay */
+  z-index: -1;
+}
 .header1 {
   display: flex;
   height: 70px;
@@ -167,18 +177,22 @@ const getBoxStyle = (name, index) => {
   padding-inline: 45px;
   justify-content: space-between;
   align-items: center;
-  background-color: #FF6B00;
+  border: 1px dashed #f0dfd3;
+  color: black;
+  background-color: white;
 }
 
 .header1 h1 {
   font-size: 30px;
   margin: 7px;
-  font-family: "Rampart One", sans-serif;
-  padding-inline: 10px;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;  font-weight: bolder;
 }
 
 .header1 img{
   height: 50px;
+  background-color: rgb(0, 0, 0);
 }
 
 .social-icons {
@@ -194,12 +208,13 @@ const getBoxStyle = (name, index) => {
 .social-icons a {
   margin-right: 15px;
   font-size: 1.5rem;
-  color: white;
+  color: black;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  font-size: 1.8rem;
+  translate: 0px -5px;
+  border-bottom: black 1px solid;
 }
 
 /* Desktop nav label */
@@ -207,8 +222,8 @@ const getBoxStyle = (name, index) => {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
-  background-color: #eee;
-  color: #FF6B00;
+  /* background-color: #eee; */
+  color: white;
   font-weight: bold;
   padding: 0px;
   width: 30px;
@@ -216,31 +231,35 @@ const getBoxStyle = (name, index) => {
   text-align: center;
   cursor: pointer;
   font-size: 1rem;
-  border-right: 1px dotted #d25801;
+  border-right: 1px solid #f0dfd3;
+  border-left: 1px solid #f0dfd3;
   transition: all 0.3s ease;
 }
 
 .nav-label.active {
-  background-color: #FF6B00;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
   width: 50px;
   font-size: 1.7rem;
 }
 
 .content-wrapper {
-  width: calc(100vw - 210px);
+  width: calc(100vw - 200px);
   height: 100%;
-  background: white;
-  padding: 20px;
+  /* background: white; */
+  padding-inline: 10px;
+  padding-top: 10px;
   overflow-y: auto;
   scrollbar-width: thin;
+  transition: all 0.3s ease;
   scrollbar-color: transparent transparent;
 }
 
 /* ---------- Mobile Styles ---------- */
 @media (max-width: 768px) {
+
   .header1 {
-    padding: 10px 15px;
+    padding: 5px;
     justify-content: space-around;
 
   }
@@ -256,7 +275,6 @@ const getBoxStyle = (name, index) => {
   }
 
   .social-icons {
-    border: none;
     margin: 0;
     gap: 5px;
     width: auto;
@@ -274,29 +292,36 @@ const getBoxStyle = (name, index) => {
     width: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    background: #f7f7f7;
-    border-left: 2px solid #FF6B00;
+    background-color: white;
+    border: none;
     z-index: 999;
+    gap: 0px;
   }
 
   .section-button {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    font-size: 0.9rem;
+    font-size: 15px;
     cursor: pointer;
-    padding: 8px 4px;
-    color: #FF6B00;
-    transition: all 0.3s ease;
+    padding: 0px;
+    width:40px;
+    flex-grow: 1;
+    text-align:center;
+    align-content: center;
+    color: black;
+
   }
 
   .section-button.active {
-    font-weight: bold;
-    background: #FF6B00;
+    font-weight:500;
+    background-color: black;
     color: white;
-    border-radius: 4px;
+    border: 2px black solid;
+    font-size: 20px;
+    transition: all ease 0.3s;
+
   }
 
   .nav-label {
@@ -307,6 +332,7 @@ const getBoxStyle = (name, index) => {
     width: calc(100vw - 40px);
     padding: 10px;
     overflow-y: auto;
+    background-image: url('dark.jpg');
   }
 
   .label-content-box {

@@ -113,12 +113,6 @@ const projects = [
 
 }
 
-.section-title {
-  font-size: 2.5rem;
-  color: #FF6B00;
-  margin-bottom: 40px;
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
@@ -191,7 +185,8 @@ const projects = [
 
 .overlay-icons a:hover {
   transform: scale(1.2);
-  color: #FF6B00;
+  color: #fa7f74;
+;
 }
 
 /* Header with title and icons */
@@ -228,7 +223,7 @@ const projects = [
 }
 
 .icon-links a:hover {
-  color: #FF6B00;
+    color: #fa7f74;
 }
 
 /* Description + tags */
@@ -248,17 +243,18 @@ const projects = [
 }
 
 .tag {
-  background-color: #FF6B00;
-  color: #fff;
+  background-color: #fa7f74;
+  color: #000;
   font-size: 12px;
+  font-weight:500;
   padding: 4px 10px;
   border-radius: 16px;
 }
 
 @media (max-width: 768px) {
   .projects-section {
-    padding: 10px;
-    width: calc(100vw - 80px);
+    padding: 0px;
+    width: calc(100vw - 60px);
 
   }
 

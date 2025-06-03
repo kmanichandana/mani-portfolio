@@ -91,15 +91,17 @@ const education = [
 
 .logo-wrapper {
   width: 120px;
-  background: #eee;
+  background: transparent;
   display: flex;
   align-items: center;
+  margin: 2px;
   justify-content: center;
 }
 
 .logo-wrapper img {
   max-height: 100%;
-  max-width: 80%;
+  max-width: 100%;
+  border-radius: 10px;
   object-fit: contain;
 }
 
@@ -159,25 +161,27 @@ const education = [
 /* ✅ Responsive Styles */
 @media (max-width: 768px) {
   .education-section {
-    padding: 10px;
-    width: calc(100vw - 80px);
+    padding: 0px;
+    width: calc(100vw - 60px);
   }
 
   .education-card {
-    flex-direction: column;
     align-items: stretch;
+    flex-direction: column;
     text-align: center;
   }
 
   .logo-wrapper {
-    width: 100%; /* ✅ Ensure full width */
-    padding: 10px;
+    width: 70%; /* ✅ Ensure full width */
+    padding: 3px;
+    align-self:center;
     background: transparent;
+    margin: 0px;
   }
 
   .card-content {
     width: 100%;  /* ✅ Fix content stacking issue */
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,12 +196,23 @@ const education = [
   }
 
   .institution {
-    font-size: 1.1rem;
+    font-size: 15px;
   }
 
   .degree {
-    font-size: 1rem;
+    font-size: 12px;
   }
+
+  .duration {
+    font-size: 10px;
+}
+
+.course {
+    font-size: 10px;
+}
+.location {
+  font-size: 10px;
+}
 }
 
 

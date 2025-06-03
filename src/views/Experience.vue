@@ -107,7 +107,7 @@ const experiences = [
 .experience-card {
   display: flex;
   background-color: #f7f7f7;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   min-height: auto;
   align-items: flex-start;
@@ -117,13 +117,18 @@ const experiences = [
 .logo-wrapper {
   width: 120px;
   display: flex;
+  margin: 2px;
   align-items: center;
+    border-radius: 10px;
+
   justify-content: center;
 }
 
 .logo-wrapper img {
   max-height: 100%;
   max-width: 100%;
+  border-radius: 10px;
+
   object-fit: contain;
 }
 
@@ -144,19 +149,19 @@ const experiences = [
 .role {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: black;
   margin: 0;
 }
 
 .duration {
   font-size: 0.95rem;
-  color: #999;
+  color: black;
 }
 
 .company {
   font-size: 1rem;
   font-weight: 500;
-  color: #444;
+  color: rgb(58, 57, 57);
   margin: 0;
 
 }
@@ -179,7 +184,8 @@ const experiences = [
 @media (max-width: 768px) {
 
   .experience-section {
-    width: calc(100vw - 80px);
+    padding: 0px;
+    width: calc(100vw - 60px);
   }
 
   .experience-card {
@@ -189,13 +195,14 @@ const experiences = [
   }
 
   .logo-wrapper {
-    width: 100%;
-    padding: 10px 0;
+    width: 70%;
+    align-self: center;
+    padding: 10px 0px;
     justify-content: center;
   }
 
   .card-content {
-    padding: 16px;
+    padding: 18px;
   }
 
   .top-row,

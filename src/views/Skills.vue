@@ -174,7 +174,8 @@ const skills = [
 
 @media (max-width: 768px) {
   .skills-section {
-    padding: 60px 20px;
+    padding-inline: 0px;
+    width: calc(100vw - 60px);
   }
   .skill-card {
     width: 80px;
