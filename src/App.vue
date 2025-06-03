@@ -255,7 +255,7 @@ const getBoxStyle = (name, index) => {
   scrollbar-width: thin;
   transition: all 0.3s ease;
   scrollbar-color: transparent transparent;
-  background-image: url('dark.jpg');
+  background-image: url('/public/dark.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -337,9 +337,6 @@ const getBoxStyle = (name, index) => {
     width: calc(100vw - 40px);
     padding: 10px;
     overflow-y: auto;
-    background-image: url('dark.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .label-content-box {
