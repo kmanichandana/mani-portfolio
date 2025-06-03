@@ -69,7 +69,7 @@ const projects = [
     title: 'Elegance Clinic',
     description:
       'A full-stack app to manage clinic appointments with SMS reminders, built using Vue, Node.js, MongoDB, and Twilio.',
-    tech: ['Vue', 'Node.js', 'MongoDB', 'Twilio'],
+    tech: ['Next.js', 'MongoDB', 'Twilio'],
     img: 'elegance.png',
     github: 'https://github.com/kmanichandana/elegance-clinic',
     live: 'https://elegance-clinic.vercel.app/'
