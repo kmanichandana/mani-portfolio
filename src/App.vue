@@ -158,7 +158,7 @@ const getBoxStyle = (name, index) => {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url('dark.jpg');
+  background-image: url('/public/dark.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -180,7 +180,7 @@ const getBoxStyle = (name, index) => {
   border: 1px dashed #f0dfd3;
   color: black;
   background-color: white;
-  box-shadow: #fa7f74 0px 0px 10px;
+  /* box-shadow: #fa7f74 0px 0px 10px; */
 
 }
 
@@ -241,7 +241,7 @@ const getBoxStyle = (name, index) => {
 .nav-label.active {
   background-color: rgb(255, 255, 255);
   color: black;
-  box-shadow: #fa7f74 0px -10px 10px;
+  /* box-shadow: #fa7f74 0px -10px 10px; */
   width: 50px;
   font-size: 1.7rem;
 }
