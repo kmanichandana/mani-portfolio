@@ -2,7 +2,7 @@
   <section class="home-container">
     <div class="left">
 
-      <div class="social-icons">
+      <div class="social-icons" >
         <a href="https://www.linkedin.com/in/mani-chandana-kandukuri/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
@@ -76,21 +76,21 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   text-align: left;
-  color: black;
+  color: white;
 }
 .left {
   display:flex;
   width: 100%;
   padding-inline: 10px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .right {  
   margin: 20px;
   max-height: 40vh;
-  box-shadow: black 0 0 10px;
+  box-shadow: #fa7f74 0 0 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgb(223, 224, 223);
   border: solid black 1px;
 }
 
@@ -113,7 +113,7 @@ h1{
 .typing-text {
   font-size: 2rem;
   margin: 1rem 0;
-  color: black;
+  color: white;
 }
 
 .typed-role{
@@ -131,15 +131,18 @@ h1{
   flex-direction: column;
   justify-content: space-around;
   margin-right: 20px;
+  text-wrap: 10px 10px 0;
 }
 .social-icons a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #f77064;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #444;
+  color: #fd2f1c;
+  translate: 5px 0px;
+  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
