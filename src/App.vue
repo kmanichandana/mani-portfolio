@@ -249,13 +249,15 @@ const getBoxStyle = (name, index) => {
 .content-wrapper {
   width: calc(100vw - 200px);
   height: 100%;
-  /* background: white; */
   padding-inline: 10px;
   padding-top: 10px;
   overflow-y: auto;
   scrollbar-width: thin;
   transition: all 0.3s ease;
   scrollbar-color: transparent transparent;
+  background-image: url('dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ---------- Mobile Styles ---------- */
@@ -336,6 +338,8 @@ const getBoxStyle = (name, index) => {
     padding: 10px;
     overflow-y: auto;
     background-image: url('dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .label-content-box {
