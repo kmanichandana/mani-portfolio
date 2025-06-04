@@ -21,9 +21,9 @@
       </div>
 
       <div class="intro">
-        <h1>Hi! I am <span class="name">Mani</span></h1>
+        <h1>Hi! I am <span class="name">Mani</span>,</h1>
         <h2 class="typing-text">
-          "<span ref="typedText" class="typed-role"></span>"
+          A "<span ref="typedText" class="typed-role"></span>"
         </h2>
       </div>
       
