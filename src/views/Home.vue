@@ -23,7 +23,6 @@
       <div class="intro">
         <h1>Hi! I am <span class="name">Mani</span></h1>
         <h2 class="typing-text">
-          I am a
           "<span ref="typedText" class="typed-role"></span>"
         </h2>
       </div>
