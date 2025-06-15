@@ -79,7 +79,7 @@ const projects = [
     description:
       'Personal portfolio built with Vue and Vite featuring project showcase, skills, and responsive design.',
     tech: ['Vue', 'Vite', 'CSS'],
-    img: 'portfolio.jpg',
+    img: 'portfolio.png',
     github: 'https://github.com/kmanichandana/mani-portfolio',
     live: 'https://mani-chandana-kandukuri.netlify.app/'
   },
@@ -88,7 +88,7 @@ const projects = [
     description:
       'Task manager with CRUD, calendar view, modal UI, and real-time filtering using vanilla JS.',
     tech: ['JavaScript', 'HTML', 'CSS'],
-    img: 'taskmanager.jpg',
+    img: 'cale.png',
     github: 'https://github.com/kmanichandana/Task_Manager',
     live: 'https://kmanichandana.github.io/Task_Manager/'
   },
@@ -97,7 +97,7 @@ const projects = [
     description:
       'JavaFX banking system with MVC, role-based UI, and SQL backend.',
     tech: ['JavaFX', 'MVC', 'SQL', 'XHTML'],
-    img: 'bank.jpg',
+    img: 'bankkk.png',
     github: 'https://github.com/yourusername/bank-app'
   }
 ]
@@ -109,8 +109,6 @@ const projects = [
   background-color: transparent;
   text-align: center;
   height: fit-content;
-  margin-bottom: 100px;
-
 }
 
 .projects-grid {
@@ -122,7 +120,7 @@ const projects = [
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
@@ -142,6 +140,7 @@ const projects = [
   position: relative;
   width: 100%;
   height: 180px;
+  /* background-color: #fff; */
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -229,7 +228,7 @@ const projects = [
 /* Description + tags */
 .project-description {
   font-size: 15px;
-  color: #555;
+  color: #333;
   margin-bottom: 14px;
   text-align: center;
 }
@@ -243,7 +242,7 @@ const projects = [
 }
 
 .tag {
-  background-color: #fa7f74;
+  background-color: #f18e85;
   color: #000;
   font-size: 12px;
   font-weight:500;

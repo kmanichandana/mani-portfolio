@@ -1,37 +1,41 @@
 <template>
   <section class="home-container">
     <div class="left">
-
-      <div class="social-icons" >
-        <a href="https://www.linkedin.com/in/mani-chandana-kandukuri/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:kmanichandana29@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/kmanichandana" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="/resume.pdf" target="_blank">
-          <i class="fas fa-file-alt"></i>
-        </a>
-      </div>
-      <div class="right">
-        <img src="/Profile.png" alt="Mani Chandana" />
+      <div class="profile">
+        <div class="social-icons" >
+          <a href="https://www.linkedin.com/in/mani-chandana-kandukuri/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:kmanichandana29@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/kmanichandana" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="/resume.pdf" target="_blank">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+        <div class="right">
+          <img src="/Profile.png" alt="Mani Chandana" />
+        </div>
       </div>
 
       <div class="intro">
         <h1>Hi! I am <span class="name">Mani</span>,</h1>
         <h2 class="typing-text">
-          A "<span ref="typedText" class="typed-role"></span>"
+          I'm a "<span ref="typedText" class="typed-role"></span>"
         </h2>
       </div>
       
     </div>
 
     <p class="description">
-        "I develop full-stack web applications using modern frameworks, ensuring responsive UIs and robust backend architecture.
-        Proficient in building scalable systems, integrating APIs, and optimizing performance across the stack."
+        " Creative Developer with a strong foundation in both frontend and backend technologies, 
+        passionate about building scalable, user-centric applications. 
+        Backed by hands-on experience at Cognizant and a Master’s in Information Technology & Management (4.0 GPA) from Illinois Institute of Technology, 
+        I specialize in React, Node.js, and cloud-native solutions. 
+        From designing dynamic UIs to engineering robust APIs, I thrive on turning complex ideas into seamless digital experiences."
     </p>
   </section>
 </template>
@@ -83,13 +87,17 @@ onMounted(() => {
   padding-inline: 10px;
   background-color: transparent;
 }
+.profile{
+  display: flex;
+  flex-direction: row;
+}
 
 .right {  
   margin: 20px;
   max-height: 40vh;
   box-shadow: #fa7f74 0 0 10px;
   border-radius: 50%;
-  background-color: rgb(223, 224, 223);
+  background-color: rgb(223, 224, 223, 0.8);
   border: solid black 1px;
 }
 
@@ -149,6 +157,7 @@ h1{
     flex-direction: column;
     text-align: center;
     padding: 0px;
+    margin-bottom: 30px;
     width: calc(100vw - 60px);
   }
 
@@ -161,20 +170,23 @@ h1{
 
   .right {
     margin: 0px;
-    box-shadow: none;
-    border: none;
-    background-color: transparent;
-    border-radius: 0%;
+    width: 70vw;
+    height: 70vw;
+    align-self: center;
   }
   .right img{
     width: 70vw;
-    border-radius: 10px;
-    background-color: #ececea;
-
+    height: 70vw;
 
   }
   .social-icons {
-    display: none;
+    flex-direction: row;
+    margin-right: 0px;
+  }
+
+  .profile{
+    flex-direction: column-reverse;
+    gap: 10px;
   }
 
   .name {
@@ -186,6 +198,10 @@ h1{
 
   .typing-text {
     font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 15px;
   }
   
 }

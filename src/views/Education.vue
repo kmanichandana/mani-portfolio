@@ -78,7 +78,7 @@ const education = [
 
 .education-card {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: rgb(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   align-items: flex-start;
@@ -125,6 +125,8 @@ const education = [
 .bottom-row {
   display: flex;
   align-items: center;
+  height: 10px;
+
 }
 
 .institution {
@@ -136,7 +138,7 @@ const education = [
 
 .location {
   font-size: 0.95rem;
-  color: #888;
+  color: #333;
   font-style: italic;
 }
 
@@ -149,13 +151,13 @@ const education = [
 
 .duration {
   font-size: 0.9rem;
-  color: #999;
+  color: #333;
 }
 
 .course {
   font-size: 0.95rem;
   font-style: italic;
-  color: #777;
+  color: #333;
 }
 
 /* ✅ Responsive Styles */
@@ -163,6 +165,7 @@ const education = [
   .education-section {
     padding: 0px;
     width: calc(100vw - 60px);
+    margin-bottom: 30px;
   }
 
   .education-card {
@@ -172,7 +175,7 @@ const education = [
   }
 
   .logo-wrapper {
-    width: 70%; /* ✅ Ensure full width */
+    width: 60%;
     padding: 3px;
     align-self:center;
     background: transparent;
@@ -180,7 +183,7 @@ const education = [
   }
 
   .card-content {
-    width: 100%;  /* ✅ Fix content stacking issue */
+    width: 100%; 
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -195,6 +198,10 @@ const education = [
     gap: 4px;
   }
 
+  .bottom-row {
+    height: 40px
+
+  }
   .institution {
     font-size: 15px;
   }

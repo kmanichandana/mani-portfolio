@@ -21,16 +21,14 @@
         />
         <p>{{ skill.name }}</p>
       </div>
- 
-      <div class="legend">
+    </div>
+    <div class="legend">
         <span class="badge lang">Programming Languages</span>
         <span class="badge backend">Backend</span>
         <span class="badge frontend">Frontend</span>
         <span class="badge database">Database</span>
         <span class="badge tool">Tool / Platform</span>
       </div>
-  
-    </div>
   </section>
 </template>
 
@@ -81,23 +79,31 @@ const skills = [
 }
 
 .skills-grid {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+  grid-template-columns: repeat(7, 1fr);
+  /* border-radius: 20px;
+  border-inline: white solid 1px;
+  padding: 10px; */
 }
 
 .skill-card {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   position: relative;
   cursor: default;
+  margin-inline: auto;
+}
+.skill-card:hover{
+  box-shadow: 0 0px 10px rgba(247, 245, 245, 0.65);
+  transition: all 0.2s ease;
 }
 
 .skill-card:hover .skill-icon {
@@ -117,19 +123,19 @@ const skills = [
 
 /* Color backgrounds based on category */
 .lang {
-  background-color: #FFE5CA;
+  background-color: rgba(255, 229, 202, 0.8);
 }
 .backend {
-  background-color: #f6d8f8;
+  background-color: rgb(246, 216, 248, 0.8);
 }
 .frontend {
-  background-color: #FFD6D6;
+  background-color: rgb(255, 214, 214, 0.8);
 }
 .database {
-  background-color: #bbc2e0;
+  background-color: rgb(187, 194, 224, 0.8);
 }
 .tool {
-  background-color: #cbecdf;
+  background-color: rgb(203, 236, 223, 0.8);
 }
 /*  */
 /* FFF0D1 */
@@ -155,7 +161,9 @@ const skills = [
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 50px;
+  /* border-top: white solid 1px; */
 }
 
 .badge {
@@ -166,11 +174,6 @@ const skills = [
   color: #333;
   margin-top: 30px;
 }
-.badge.lang     { background: #FFE5CA; }
-.badge.backend  { background: #f6d8f8; }
-.badge.frontend { background: #FFD6D6; }
-.badge.database { background: #bbc2e0; }
-.badge.tool     { background: #cbecdf; }
 
 @media (max-width: 768px) {
   .skills-section {
@@ -185,7 +188,14 @@ const skills = [
     height: 30px;
     width: 30px;
   }
+
+  .skills-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
     
+  .legend {
+    margin-bottom: 30px;
+  }
   
 }
 </style>

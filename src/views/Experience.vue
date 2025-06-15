@@ -87,7 +87,6 @@ const experiences = [
   padding: 10px;
   background-color: transparent;
   height: fit-content;
-  margin-bottom: 100px;
 }
 
 .section-title {
@@ -106,7 +105,7 @@ const experiences = [
 /* Experience Card Layout */
 .experience-card {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: rgb(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   min-height: auto;
@@ -119,8 +118,7 @@ const experiences = [
   display: flex;
   margin: 2px;
   align-items: center;
-    border-radius: 10px;
-
+  border-radius: 10px;
   justify-content: center;
 }
 
@@ -169,13 +167,13 @@ const experiences = [
 .location {
   font-style: italic;
   font-size: 0.9rem;
-  color: #777;
+  color: #333;
 }
 
 .details {
   margin-top: 12px;
   font-size: 0.95rem;
-  color: #555;
+  color: #333;
   padding: 15px;
   line-height: 1.6;
   list-style: disc;

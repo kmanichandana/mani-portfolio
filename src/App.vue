@@ -1,9 +1,9 @@
 <template>
   <div class="app-layout">
     <!-- Header -->
-    <div class="header1">
+    <!-- <div class="header1"> -->
       <!-- <img src="/mck.png" alt="Mani Chandana" /> -->
-      <h1>Mani Chandana Kandukuri</h1>
+      <!-- <h1>Mani Chandana Kandukuri</h1>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/mani-chandana-kandukuri/" target="_blank">
           <i class="fab fa-linkedin"></i>
@@ -18,7 +18,7 @@
           <i class="fas fa-file-alt"></i>
         </a>
       </div>
-    </div>
+    </div> -->
 
     <!-- Mobile Nav -->
     <div class="mobile-nav" v-if="isMobile">
@@ -110,13 +110,12 @@ const getBoxStyle = (name, index) => {
   if (isMobile.value) {
     return {
       position: 'absolute',
-      top: '70px',
       left: 0,
       width: '100vw',
-      height: 'calc(100vh - 70px)',
+      height: '90%' ,
+      // height: 'calc(100vh - 70px)',
       zIndex: zIndex,
       display: name === activeSection.value ? 'block' : 'none',
-      background: '#fff',
       overflowY: 'auto'
     }
   }
@@ -162,6 +161,7 @@ const getBoxStyle = (name, index) => {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 .app-layout::before {
   content: '';
@@ -170,6 +170,7 @@ const getBoxStyle = (name, index) => {
   background: rgba(0, 0, 0, 0.3); /* black overlay */
   z-index: -1;
 }
+
 .header1 {
   display: flex;
   height: 70px;
@@ -181,7 +182,6 @@ const getBoxStyle = (name, index) => {
   color: black;
   background-color: white;
   /* box-shadow: #fa7f74 0px 0px 10px; */
-
 }
 
 .header1 h1 {
@@ -229,7 +229,8 @@ const getBoxStyle = (name, index) => {
   font-weight: bold;
   padding: 0px;
   width: 30px;
-  height: calc(100vh - 70px);
+  height: 100%;
+  /* height: calc(100vh - 70px); */
   text-align: center;
   cursor: pointer;
   font-size: 1rem;
@@ -239,7 +240,7 @@ const getBoxStyle = (name, index) => {
 }
 
 .nav-label.active {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
   color: black;
   /* box-shadow: #fa7f74 0px -10px 10px; */
   width: 50px;
@@ -249,15 +250,13 @@ const getBoxStyle = (name, index) => {
 .content-wrapper {
   width: calc(100vw - 200px);
   height: 100%;
+  /* height: calc(100% - 80px); */
   padding-inline: 10px;
   padding-top: 10px;
   overflow-y: auto;
   scrollbar-width: thin;
   transition: all 0.3s ease;
   scrollbar-color: transparent transparent;
-  background-image: url('/public/dark.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* ---------- Mobile Styles ---------- */
@@ -291,9 +290,10 @@ const getBoxStyle = (name, index) => {
 
   .mobile-nav {
     position: fixed;
-    top: 70px;
+    /* top: 70px; */
     right: 0;
-    height: calc(100vh - 70px);
+    height: 100%;
+    /* height: calc(100% - 70px); */
     width: 40px;
     display: flex;
     flex-direction: column;
@@ -335,8 +335,11 @@ const getBoxStyle = (name, index) => {
 
   .content-wrapper {
     width: calc(100vw - 40px);
+    height: 100%;
+    /* height: calc(100% - 90px); */
     padding: 10px;
     overflow-y: auto;
+
   }
 
   .label-content-box {
