@@ -88,7 +88,7 @@ const projects = [
     description:
       'Task manager with CRUD, calendar view, modal UI, and real-time filtering using vanilla JS.',
     tech: ['JavaScript', 'HTML', 'CSS'],
-    img: 'cale.png',
+    img: 'taskmanager.png',
     github: 'https://github.com/kmanichandana/Task_Manager',
     live: 'https://kmanichandana.github.io/Task_Manager/'
   },
@@ -97,7 +97,7 @@ const projects = [
     description:
       'JavaFX banking system with MVC, role-based UI, and SQL backend.',
     tech: ['JavaFX', 'MVC', 'SQL', 'XHTML'],
-    img: 'bankkk.png',
+    img: 'bank.png',
     github: 'https://github.com/yourusername/bank-app'
   }
 ]

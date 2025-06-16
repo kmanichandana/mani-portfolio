@@ -17,7 +17,7 @@
           </a>
         </div>
         <div class="right">
-          <img src="/Profile.png" alt="Mani Chandana" />
+          <img src="/ppp.png" alt="Mani Chandana" />
         </div>
       </div>
 
