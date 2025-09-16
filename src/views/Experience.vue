@@ -45,6 +45,16 @@ import AOS from 'aos'
 
 const experiences = [
   {
+    role: 'BACKEND RESEARCH ASSISTANT',
+    duration: 'July 2025 – Present',
+    company: 'Illinois Institute of Technology',
+    location: 'Chicago, IL',
+    logo: 'iit.png',
+    points: [
+      'Building a secure backend for an automated grading system using Python, Redis, and Docker. Streamlined execution of 100+ student submissions per assignment through integration with Autolab.',
+      'Engineered containerized job processing logic to run and evaluate student code in isolated environments, reducing manual grading effort by up to 90% and supporting scalable multi-course deployment.'    ]
+  },
+  {
     role: 'PROGRAMMER ANALYST',
     duration: 'Oct 2022 – Jul 2023',
     company: 'Cognizant Technology Solutions',
