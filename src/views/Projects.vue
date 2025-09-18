@@ -79,7 +79,7 @@ const projects = [
     description:
       'Logic-intensive puzzle games built with React and Java Script, ensuring smooth and responsive design.',
       tech: ['React', 'JavaScript'],
-      img: 'gd.png',
+      img: 'gamedimension.png',
       github: 'https://github.com/kmanichandana/game-dimension',
       live: 'https://gameswebsite-three.vercel.app/'
     },
