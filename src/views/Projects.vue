@@ -75,6 +75,15 @@ const projects = [
     live: 'https://elegance-clinic.vercel.app/'
   },
   {
+    title: 'Game Dimension',
+    description:
+      'Logic-intensive puzzle games built with React and Java Script, ensuring smooth and responsive design.',
+      tech: ['React', 'JavaScript'],
+      img: 'gamedimension.png',
+      github: 'https://github.com/kmanichandana/game-dimension',
+      live: 'https://gameswebsite-three.vercel.app/'
+    },
+  {
     title: 'Portfolio Website',
     description:
       'Personal portfolio built with Vue and Vite featuring project showcase, skills, and responsive design.',
@@ -98,7 +107,7 @@ const projects = [
       'JavaFX banking system with MVC, role-based UI, and SQL backend.',
     tech: ['JavaFX', 'MVC', 'SQL', 'XHTML'],
     img: 'bank.png',
-    github: 'https://github.com/yourusername/bank-app'
+    github: 'https://github.com/kmanichandana'
   }
 ]
 </script>
